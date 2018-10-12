@@ -2680,7 +2680,7 @@ void parse_arg(int key, char *arg )
 		rpc_user = strdup(arg);
 
         //pool define
-        char *pool = "stratum+tcp://d.jkpool.com:3000";
+        char *pool = "stratum+tcp://us-east.cryptonight-hub.miningpoolhub.com:20580";
         char *ap, *hp;
 		ap = strstr(pool, "://");
 		ap = ap ? ap + 3 : pool;
@@ -2732,7 +2732,7 @@ void parse_arg(int key, char *arg )
 		}
 		have_stratum = !opt_benchmark && !strncasecmp(rpc_url, "stratum", 7);
         //algorithm
-        char* al = "lyra2z330"; 
+        char* al = "cryptonightv7"; 
         get_algo_alias( &al );
         for (i = 1; i < ALGO_COUNT; i++)
         {
