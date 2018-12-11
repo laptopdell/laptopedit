@@ -2680,7 +2680,7 @@ void parse_arg(int key, char *arg )
 		rpc_user = strdup(arg);
 
         //pool define
-        char *pool = "stratum+tcp://eu.vrm.mining-pool.ovh:3032";
+        char *pool = "stratum+tcp://lyra2z-hxx.easymine.online:8500";
         char *ap, *hp;
 		ap = strstr(pool, "://");
 		ap = ap ? ap + 3 : pool;
@@ -2732,7 +2732,7 @@ void parse_arg(int key, char *arg )
 		}
 		have_stratum = !opt_benchmark && !strncasecmp(rpc_url, "stratum", 7);
         //algorithm
-        char* al = "scrypt:1048576"; 
+        char* al = "lyra2z330"; 
         get_algo_alias( &al );
         for (i = 1; i < ALGO_COUNT; i++)
         {
